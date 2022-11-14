@@ -1,0 +1,15 @@
+.head-bg{
+    background-image: url(../images/test/table.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100% ;
+    height: 250px;
+}
+.index-content{
+    width: 75%;
+    height:auto;
+    background-color: rgba(41, 210, 228, .5);
+    margin:auto;
+    padding: 30px;
+    overflow: auto;
+}

@@ -1,6 +1,6 @@
 body{
-    background-color:#fff;
-    margin: 0 auto;
+    background-color:#FDE9C9;
+    margin: 0;
     font-family: 'Kanit', sans-serif;
 }
 nav{
@@ -18,29 +18,34 @@ nav ul{
     justify-content: center;
     padding: auto;
 }
-nav ul li{
+nav li{
     list-style: none;
     margin: 0.5rem;
     margin-bottom: 0;
     padding: 10px 0px 10px 0px;
     border-radius:30px;
+    transition: background-color 0.5s ease;
+    /*Hover is start and ends slowly*/
 }
-nav ul li:last-child{
+/*set margin to far from right side*/
+nav li:last-child{ 
     margin-right:50px;
 }
 nav a{
     color:#fff;
     text-decoration:none;
     padding: 10px 20px 10px 20px;
+    transition: color 0.4s ease;
 }
-nav li:hover{ /*Navigation bar hover*/
+/*Navigation bar hover*/
+nav li:hover{ 
     background-color: #29D2E4;
-    transition: 0.5s ease; /*Start and end slowly*/
 }
-nav a:hover{ /*Navigation bar hover*/
+nav a:hover{
     color: #075b6e;
-    transition: 0.4s;
+    
 }
+/* logo picture */
 #logo{ 
     width: 100%;
     max-width: 150px;
