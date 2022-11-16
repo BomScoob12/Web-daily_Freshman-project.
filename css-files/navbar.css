@@ -2,6 +2,7 @@ body{
     background-color:#FDE9C9;
     margin: 0;
     font-family: 'Kanit', sans-serif;
+    font-size: 1.4rem;
 }
 nav{
     display: flex;
