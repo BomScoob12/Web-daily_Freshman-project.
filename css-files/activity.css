@@ -1,0 +1,33 @@
+/* Box content */
+.content {
+    width: 75%;
+    height: auto;
+    background-color: rgba(41, 210, 228, .5);
+    color: #11063E;
+    margin: auto;
+    padding: 30px;
+    overflow: auto;
+    font-size: 1.3rem;
+}
+
+.grid-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, auto);
+    align-content: center;
+    gap: 20px;
+    border: #11063E 4px solid;
+}
+.grid-container img{
+    max-width: 100%;
+}
+
+.grid-container>h2{
+    grid-column: 1 / span 3;
+    grid-row: 1 / 2;
+    justify-self: center;
+}
+.left-content img{
+    grid-row: 2/3;
+    grid-column: 1/2;
+}

@@ -1,7 +1,4 @@
 footer{
-    position: sticky;
-
-    /* box-sizing: border-box; */
     background-color: #13829B;
     width: 100%;
     height: auto;
@@ -12,6 +9,7 @@ footer{
 .footer-content h3{
     margin: 0;
 }
+/* footer content */
 .footer-content{
     display: flex;
     flex-direction: column;
@@ -20,9 +18,17 @@ footer{
     text-align: center;
     line-height: 24px;
 }
+/* text content */
 .footer-content span{
     font-size: 14px;
 }
+
+/* bottom footer content on the left side */
+.footer-bottom{
+    padding-left: 10px;
+}
+
+/* list contact */
 .socials{
     display: flex;
     justify-content: center;
@@ -31,6 +37,7 @@ footer{
 .socials li{
     list-style: none;
     padding: 0 10px;
+    transition:0.4s;
 }
 .socials a{
     text-decoration: none;
@@ -39,6 +46,20 @@ footer{
     width: 30px;
     height: 30px;
 }
-.footer-bottom{
-    padding-left: 10px;
+.socials span{
+    position: fixed;
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 1px;
+    color: #13829B;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+/* contact effect */
+.socials li:hover{
+    transform: scale(1.5);
+}
+.socials li:hover span{
+    opacity: 1;
 }

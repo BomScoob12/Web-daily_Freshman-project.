@@ -1,3 +1,4 @@
+/* Box content */
 .content {
     width: 75%;
     height: auto;
@@ -8,14 +9,60 @@
     overflow: auto;
     font-size: 1.3rem;
 }
+
 h2 {
     text-align: center;
 }
 
-.diaries {
-    border:4px solid red;
+/* Dropdown Select years */
+.select-years {
+    position: relative;
+    display: inline-block;
+}
+.select-years span {
+    border: #973c00 2px solid;
+    padding: 0.2em;
+    border-radius: 10px;
+    background-color: #FCC29A;
+    transition: 0.5s;
+}
+.drop-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 100px;
+    z-index: 1;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+
+}
+.drop-content a {
+    display: block;
+    text-decoration: none;
+    color: #11063E;
+}
+ /* dropsown effect */
+.select-years:hover .drop-content {
+    display: block;
 }
 
+.select-years:hover span {
+    background-color: #c99777;
+    cursor: pointer;
+}
+
+.drop-content a:hover {
+    background-color: #e2e2e2;
+}
+
+
+/* diaries box */
+.diaries {
+    border: 4px solid red;
+}
+
+/* section of diary */
 section {
     display: grid;
     grid-template-columns: 3em 1fr 2fr;
@@ -27,42 +74,68 @@ section {
     padding: 1em;
     margin: 1em 0;
 }
-.stick{
+
+/* Stick decorate*/
+.stick {
     height: max-content(100%);
     width: 2em;
     background-color: #29D2E4;
-    border-radius:20px;
+    border-radius: 20px;
     margin: 0.5em 0;
     opacity: 0.5;
 }
-.diary-date{
+
+/* diary-date */
+.diary-date {
     position: relative;
     padding: 10px;
 }
-.diary-date p{
+
+.diary-date p {
     word-wrap: break-word;
     width: 1fr;
     margin: 0;
 }
-.diary-date b::after{
+
+.diary-date b::after {
     content: " : ";
 }
-.img-date img{
-    width: 100px;
+
+/* diary-date pictures */
+.img-date {
+    width: 95%;
+    margin: auto;
+    margin-top: 1em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
-.img-date:hover{
+
+.img-date img {
     display: block;
-    position: absolute;
-    margin: 0 auto;
-    width: 70%;
+    max-width: 100px;
+    margin: 2px 5px;
+    border-radius: 10px;
+    transition: 0.5s;
+    box-shadow: 0 2px 2px 0;
 }
-.details{
+
+.img-date img:hover {
+    transform: scale(3.5)
+}
+
+/* details of diary */
+.details {
     background-color: rgba(41, 210, 228, .5);
-    padding:0.5em 1.2em;
+    padding: 0.5em 1.2em;
     border-radius: 50px;
-    max-height: 20em;
+    min-height: 10em;
+    max-height: 15em;
     overflow: scroll;
 }
-.details p{
+
+.details p {
     word-wrap: break-word;
+    font-size: 1rem;
 }

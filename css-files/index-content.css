@@ -93,6 +93,7 @@
 #diary-lists p {
     margin: 0;
     padding: 2px;
+    word-wrap: break-word;
 }
 
 #diary-lists b::after {

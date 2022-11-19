@@ -2,7 +2,7 @@ body {
     background-color: #FDE9C9;
     margin: 0;
     font-family: 'Kanit', sans-serif;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 
 /*Scrollbar custom*/
@@ -23,15 +23,18 @@ body {
     background: rgb(185, 82, 82);
     border-radius: 10px;
 }
-
 ::-webkit-scrollbar-thumb:hover {
     background: rgb(134, 62, 62);
 }
+/* corner of scrollbar */
 ::-webkit-scrollbar-corner{
     display: none;
 }
 
+/* navigation bar */
 nav {
+    position: sticky;
+    top: 0;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
@@ -39,15 +42,17 @@ nav {
     height: auto;
     width: 100%;
     background-color: #13829B;
+    z-index: 1;
+    /* z-index is z-axis +1 -1 or orhers */
 }
 
+/* list navigation home activity etc. */
 nav ul {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     padding: auto;
 }
-
 nav li {
     list-style: none;
     margin: 0.5rem;
@@ -62,7 +67,6 @@ nav li {
 nav li:last-child {
     margin-right: 50px;
 }
-
 nav a {
     color: #fff;
     text-decoration: none;
