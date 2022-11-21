@@ -7,7 +7,7 @@
     margin: auto;
     padding: 30px;
     overflow: auto;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 h2 {
@@ -59,7 +59,7 @@ h2 {
 
 /* diaries box */
 .diaries {
-    border: 4px solid red;
+    height: auto;
 }
 
 /* section of diary */
@@ -117,8 +117,9 @@ section {
     max-width: 100px;
     margin: 2px 5px;
     border-radius: 10px;
-    transition: 0.5s;
+    transition: 0.3s;
     box-shadow: 0 2px 2px 0;
+    /* Box shadow */
 }
 
 .img-date img:hover {

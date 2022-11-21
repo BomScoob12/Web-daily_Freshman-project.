@@ -1,5 +1,11 @@
 body {
     background-color: #FDE9C9;
+    /* Background  use output gradien circle and adjust low transparent*/
+    background-image: radial-gradient(#13829B 10%, transparent 20%),
+        radial-gradient(#fff 10%, transparent 25%);
+    /* scale of background and repeat background-img */
+    background-size: 150px 150px;
+    background-position: 0 0, 50px 50px;
     margin: 0;
     font-family: 'Kanit', sans-serif;
     font-size: 1.2rem;
@@ -9,25 +15,30 @@ body {
 ::-webkit-scrollbar {
     width: 0.8em;
 }
+
 /* This is line color */
 ::-webkit-scrollbar-track {
     border-radius: 10px;
 }
-::-webkit-scrollbar-track:hover{
+
+::-webkit-scrollbar-track:hover {
     background: #8d8d8d;
     border-radius: 10px;
     opacity: 0.5;
 }
+
 /* thumb scroll */
 ::-webkit-scrollbar-thumb {
     background: rgb(185, 82, 82);
     border-radius: 10px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
     background: rgb(134, 62, 62);
 }
+
 /* corner of scrollbar */
-::-webkit-scrollbar-corner{
+::-webkit-scrollbar-corner {
     display: none;
 }
 
@@ -53,6 +64,7 @@ nav ul {
     justify-content: center;
     padding: auto;
 }
+
 nav li {
     list-style: none;
     margin: 0.5rem;
@@ -67,6 +79,7 @@ nav li {
 nav li:last-child {
     margin-right: 50px;
 }
+
 nav a {
     color: #fff;
     text-decoration: none;

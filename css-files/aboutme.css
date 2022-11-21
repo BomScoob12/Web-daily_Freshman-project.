@@ -1,0 +1,60 @@
+.content {
+    width: 75%;
+    height: auto;
+    background-color: rgba(41, 210, 228, .5);
+    color: #11063E;
+    margin: auto;
+    padding: 30px;
+    overflow: auto;
+    font-size: 1.2rem;
+}
+.content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+.content img{
+    width: 200px;
+}
+.about-pic{
+    justify-self: center;
+    align-self: center;
+}
+.about-pic img{
+    width:250px;
+    height: auto;
+}
+.about-name li{
+    list-style: none;
+}
+.about-name b::after{
+    content: " : ";
+}
+
+
+.food{
+    grid-column: 1/span 2;
+}
+.food section{
+    display: inline-block;
+    margin: 0 1em;
+}
+
+.contact{
+    grid-column: 1/span 2;
+    
+}
+.contact section{
+    display: inline-block;
+    margin: 0 3em;
+}
+.contact img{
+    width: 100px;
+    height: 100px;
+}
+
+/* caption bottom images */
+.caption{
+    display: block;
+    text-align: center;
+}
