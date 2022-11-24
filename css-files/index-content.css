@@ -1,10 +1,10 @@
 /* background top */
 .head-bg {
-    background-image: url(../images/test/table.jpg);
+    background-image: url(../images/diary/diary3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 500px;
+    height: 400px;
 }
 
 /* Content index */
@@ -60,7 +60,7 @@
 /* Year lists */
 #years li {
     list-style: none;
-    padding: 10px;
+    padding: 0.5em;
     margin: 1.2em;
     border-radius: 20px;
     background-color: #4649ff;
@@ -69,7 +69,7 @@
 
 #years li a {
     color: white;
-    margin: 0.7em;
+    padding: 1em;
 }
 #years li:hover a{
     color: #11063E;

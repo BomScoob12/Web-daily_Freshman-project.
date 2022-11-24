@@ -35,7 +35,6 @@ h2 {
     border-radius: 10px;
     padding: 10px;
     text-align: center;
-
 }
 .drop-content a {
     display: block;
@@ -62,6 +61,7 @@ h2 {
     height: auto;
 }
 
+
 /* section of diary */
 section {
     display: grid;
@@ -75,7 +75,7 @@ section {
     margin: 1em 0;
 }
 
-/* Stick decorate*/
+/* Stick decorate ส่วนตกแต่ง*/
 .stick {
     height: max-content(100%);
     width: 2em;
@@ -90,13 +90,11 @@ section {
     position: relative;
     padding: 10px;
 }
-
 .diary-date p {
     word-wrap: break-word;
     width: 1fr;
     margin: 0;
 }
-
 .diary-date b::after {
     content: " : ";
 }
@@ -111,20 +109,20 @@ section {
     flex-wrap: wrap;
     justify-content: center;
 }
-
 .img-date img {
     display: block;
     max-width: 100px;
+    height: auto;
     margin: 2px 5px;
     border-radius: 10px;
     transition: 0.3s;
     box-shadow: 0 2px 2px 0;
     /* Box shadow */
 }
-
 .img-date img:hover {
     transform: scale(3.5)
 }
+
 
 /* details of diary */
 .details {
@@ -135,7 +133,6 @@ section {
     max-height: 15em;
     overflow: scroll;
 }
-
 .details p {
     word-wrap: break-word;
     font-size: 1rem;
