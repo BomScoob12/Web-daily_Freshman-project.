@@ -1,0 +1,50 @@
+.img-date img {
+    display: block;
+    max-width: 100px;
+    height: auto;
+    margin: 2px 5px;
+    border-radius: 10px;
+    transition: 0.3s;
+    /* Transition time for hover or animations */
+    box-shadow: 0 2px 2px 0;
+    /* Box shadow */
+}
+.img-date img:hover {
+    transform: scale(3.5)
+    /* Change Scale form 1 to 3.5 */
+}
+
+.diary-date b::after {
+    content: " : ";
+    /* After tag b it's fill content ':' */
+}
+
+/*Scrollbar custom*/
+::-webkit-scrollbar {
+    width: 0.8em;
+}
+/* scrollbar */
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+/* scrollbar when hover on it */
+::-webkit-scrollbar-track:hover {
+    background: #8d8d8d;
+    border-radius: 10px;
+    opacity: 0.5;
+}
+
+/* thumb scroll color */
+::-webkit-scrollbar-thumb {
+    background: rgb(185, 82, 82);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(134, 62, 62);
+}
+
+/* corner of scrollbar */
+::-webkit-scrollbar-corner {
+    display: none;
+}

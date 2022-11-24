@@ -99,9 +99,32 @@ nav a:hover {
 
 /* logo picture */
 #logo {
-    width: 100%;
+    width: 100px;
     max-width: 150px;
     height: auto;
     padding-left: 50px;
     margin-right: auto;
+}
+
+@media screen and (max-width:480px) {
+    body {
+        padding: 0;
+        margin: 0;
+        font-size: 0.8rem;
+    }
+
+    ::-webkit-scrollbar {
+        width: 0.4em;
+        opacity: 0.5;
+    }
+
+    #logo {
+        margin: auto;
+        padding: 0;
+    }
+
+    nav a {
+        margin: 0.2em;
+        padding: 5px;
+    }
 }

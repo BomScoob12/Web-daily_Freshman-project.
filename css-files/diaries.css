@@ -19,6 +19,7 @@ h2 {
     position: relative;
     display: inline-block;
 }
+
 .select-years span {
     border: #973c00 2px solid;
     padding: 0.2em;
@@ -26,6 +27,7 @@ h2 {
     background-color: #FCC29A;
     transition: 0.5s;
 }
+
 .drop-content {
     display: none;
     position: absolute;
@@ -36,12 +38,14 @@ h2 {
     padding: 10px;
     text-align: center;
 }
+
 .drop-content a {
     display: block;
     text-decoration: none;
     color: #11063E;
 }
- /* dropsown effect */
+
+/* dropsown effect */
 .select-years:hover .drop-content {
     display: block;
 }
@@ -90,11 +94,13 @@ section {
     position: relative;
     padding: 10px;
 }
+
 .diary-date p {
     word-wrap: break-word;
     width: 1fr;
     margin: 0;
 }
+
 .diary-date b::after {
     content: " : ";
 }
@@ -109,6 +115,7 @@ section {
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .img-date img {
     display: block;
     max-width: 100px;
@@ -119,6 +126,7 @@ section {
     box-shadow: 0 2px 2px 0;
     /* Box shadow */
 }
+
 .img-date img:hover {
     transform: scale(3.5)
 }
@@ -133,7 +141,33 @@ section {
     max-height: 15em;
     overflow: scroll;
 }
+
 .details p {
     word-wrap: break-word;
     font-size: 1rem;
+}
+
+@media screen and (max-width:480px) {
+    .content {
+        width: 90%;
+    }
+
+    section {
+        display: flex;
+        font-size: 0.8rem;
+    }
+
+    .img-date {
+        max-width: 60px;
+    }
+
+    .details {
+        min-height: 12em;
+        max-height: 17em;
+        width: 200px;
+    }
+
+    .details p {
+        font-size: 0.7rem;
+    }
 }

@@ -67,20 +67,22 @@
     transition: background-color 0.5s ease-in-out;
 }
 
+/* Select years */
 #years li a {
     color: white;
     padding: 1em;
 }
-#years li:hover a{
+
+#years li:hover a {
     color: #11063E;
 }
-#years li:hover{
-    background-color: rgba(141, 255, 255,.5);
+
+#years li:hover {
+    background-color: rgba(141, 255, 255, .5);
 }
 
 
 /* Short Diary lists */
-/* @media ตอนไดอารีเข้าหน้าเล็กๆ จัดตรงกลาง */
 #diary-lists {
     grid-column: 2 / span 2;
     justify-self: flex-start;
@@ -99,10 +101,11 @@
 #diary-lists b::after {
     content: "  : ";
 }
-#diary-lists p::before{
+
+#diary-lists p::before {
     font-weight: bold;
     color: #4649ff;
-    content:"Topic : "
+    content: "Topic : "
 }
 
 
@@ -141,4 +144,36 @@
 section a {
     text-decoration: none;
     color: #11063E;
+}
+
+@media screen and (max-width:480px) {
+    .head-bg {
+        display: none;
+    }
+
+    .index-content {
+        margin: 0 auto;
+        width: 90%;
+        font-size: 0.9rem;
+    }
+
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grid-container .head {
+        font-size: 1.5rem;
+    }
+
+    #table {
+        flex-wrap: wrap;
+    }
+
+    #years li {
+        display: inline;
+        padding: 0.2em;
+        margin: 1em 0.2em;
+        font-size: 0.9rem;
+    }
 }
