@@ -78,6 +78,15 @@
     text-align: center;
 }
 
+.css-page a{
+    border: #11063E 3px solid;
+    border-radius: 20px;
+    padding:10px;
+    text-decoration: none;
+    color: #11063E;
+    background-color: antiquewhite;
+}
+
 @media screen and (max-width:480px) {
     .content {
         width: 90%;
