@@ -177,3 +177,34 @@ section a {
         font-size: 0.9rem;
     }
 }
+@media screen and (max-width:820px) {
+    .head-bg {
+        display: none;
+    }
+
+    .index-content {
+        margin: 0 auto;
+        width: 90%;
+        font-size: 1rem;
+    }
+
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grid-container .head {
+        font-size: 1.5rem;
+    }
+
+    #table {
+        flex-wrap: wrap;
+    }
+
+    #years li {
+        display: inline;
+        padding: 0.2em;
+        margin: 1em 0.2em;
+        font-size: 0.9rem;
+    }
+}

@@ -128,7 +128,8 @@ section {
 }
 
 .img-date img:hover {
-    transform: scale(3.5)
+    transform: scale(3.5);
+    z-index: 1;
 }
 
 
@@ -165,6 +166,29 @@ section {
         min-height: 12em;
         max-height: 17em;
         width: 200px;
+    }
+
+    .details p {
+        font-size: 0.7rem;
+    }
+}
+@media screen and (max-width:820px) {
+    .content {
+        width: 90%;
+    }
+
+    section {
+        font-size: 0.8rem;
+    }
+
+    .img-date {
+        max-width: 60px;
+    }
+
+    .details {
+        min-height: 12em;
+        max-height: 17em;
+        width: 400px;
     }
 
     .details p {

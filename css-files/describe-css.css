@@ -1,11 +1,12 @@
-.content{
+.content {
     width: 70%;
     margin: 0 auto;
     padding: 0;
     overflow: auto;
-    background-color:rgba(41, 210, 228, .5);
+    background-color: rgba(41, 210, 228, .5);
 }
-section{
+
+section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
@@ -16,27 +17,101 @@ section{
     margin: 15px;
     border-radius: 20px;
 }
-section img{
+
+section img {
     width: 90%;
     height: auto;
     margin: 5px;
 }
-section p{
+
+section p {
     padding: 10px;
     grid-column: span 2;
     text-align: center;
 }
 
+/* Image Box shadow */
+.test-shadow {
+    box-shadow: 5px 5px 3px 2px;
+}
+
+/* After content or element */
+.test-after::after {
+    content: "Sarawit kraukham";
+}
+
+/* Last child change color */
+.test-lastchild :last-child {
+    color: red;
+}
+
+/* Effect hover transform scale transition */
+.test-effect {
+    transition: 1s ease-in-out;
+}
+
+.test-effect:hover {
+    transform: scale(1.2);
+    z-index: 4;
+}
+
+/* Custom Scrollbar */
+.test-scrollbar {
+    overflow: scroll;
+    height: 200px;
+}
+
+.test-scrollbar::-webkit-scrollbar {
+    width: 10px;
+    background-color: rgb(250, 250, 171);
+    border-radius: 10px;
+}
+
+.test-scrollbar::-webkit-scrollbar-thumb {
+    background: rgb(41, 172, 2);
+}
+
+.test-scrollbar::-webkit-scrollbar-corner {
+    background-color: black;
+    border-radius: 10px;
+}
+
+/* Background radial-gradient */
+.test-background {
+    background-image: radial-gradient(#001114 10%, transparent 20%),
+        radial-gradient(rgb(168, 0, 0) 10%, transparent 25%);
+    background-size: 50px 50px;
+    background-position: 0 0, 10px 15px;
+}
+
 @media screen and (max-width:480px) {
-    .content{
+    .content {
         width: 90%;
     }
-    section{
+
+    section {
         display: flex;
         flex-direction: column;
-        margin:5px;
+        margin: 5px;
     }
-    section img{
+
+    section img {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:820px) {
+    .content {
+        width: 90%;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+    }
+
+    section img {
         width: 90%;
     }
 }

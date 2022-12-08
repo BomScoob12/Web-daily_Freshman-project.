@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,6 +17,7 @@
         href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 </head>
+
 <body>
     <nav>
         <img src="images/logo/logo1.1.png" alt="Logo BomScoob Diary" id="logo">
@@ -29,25 +31,47 @@
     <div class="content">
         <section>
             <img src="images/css/box-shadow.png" alt="box-shadow">
-            <img src="images/css/box-shadow.png" alt="box-shadow">
-            <p>เงาของรูปภาพ โดยการกำหนด ...</p>
+            <img src="images/css/box-shadow.png" alt="box-shadow" class="test-shadow">
+            <p>เงาของรูปภาพ โดยการกำหนดค่า ความหนา ความฟุ้ง ได้</p>
         </section>
         <section>
-            <img src="images/css/box-shadow.png" alt="box-shadow">
-            <img src="images/css/box-shadow.png" alt="box-shadow">
-            <p>เงาของรูปภาพ โดยการกำหนด ...</p>
+            <img src="images/css/after.png" alt="Test after">
+            <b class="test-after">My name is ......</b>
+            <p>เป็นการกำหนดสิ่งที่ให้ทำหลังจาก tag นั้นๆ ที่เรากำหนด ในตัวอย่างกำหนดว่า หลัง tag b ให้เติม content
+                "Sarawit kraukham"</p>
         </section>
         <section>
-            <img src="images/css/box-shadow.png" alt="box-shadow">
-            <img src="images/css/box-shadow.png" alt="box-shadow">
-            <p>เงาของรูปภาพ โดยการกำหนด ...</p>
+            <img src="images/css/lastchild.png" alt="Test lastchild">
+            <ul class="test-lastchild">
+                <li>Diary</li>
+                <li>Food</li>
+                <li>Me</li>
+            </ul>
+            <p> last child คือการเรียก ตัวสุดท้ายใน parent นั้นๆ และเราสามารถกำหนดค่าได้ ตามที่เราต้องการ</p>
         </section>
         <section>
-            <img src="images/css/box-shadow.png" alt="box-shadow">
-            <img src="images/css/box-shadow.png" alt="box-shadow">
-            <p>เงาของรูปภาพ โดยการกำหนด ...</p>
+            <img src="images/css/scale.png" alt="transform scale transition">
+            <img src="images/css/scale.png" alt="transform scale transition" class="test-effect">
+            <p>transition คือการที่เพิ่มระยะเวลาในการเล่น อนิเมชั่น หรือ Hover</p>
+            <p>Scale คือการขยาย จากสเกลเดิมที่เท่ากับ 1 ไปเป็น 1.2</p>
+            <p>Z index คือระยะในแนวแกน Z หรือความลึก เมื่ออยากให้รูปภาพอยู่ด้านหน้า บังสิ่งของอื่นๆ ให้เพิ่มค่า Z
+                แต่ถ้าหากอยากให้อยู่ด้านหลัง ไม่บังสิ่งอื่น ให้ลดค่า Z ตาม layer</p>
         </section>
-        
+        <section>
+            <img src="images/css/Scrollbar.png" alt="Test Scrollbar">
+            <i class="test-scrollbar">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium autem
+                expedita numquam ullam id, soluta laborum consectetur sunt molestias reiciendis rem? Praesentium minima
+                perferendis soluta. Iusto dicta itaque provident ea.</i>
+            <p>Scrollbar custom โดยจะเป็นการตกแต่ง Scrollbar ให้เป็นไปตามที่เราอยากได้สามารถกำหนดเอฟเฟคอื่นๆ
+                หรือนอกเหนือจากนี้ก็ได้เช่นกัน</p>
+        </section>
+        <section>
+            <img src="images/css/background.png" alt="Test background">
+            <div class="test-background"></div>
+            <p> background radial-gradient คือการกำหนดรูปเป็นวงกลมที่มีการไล่สี ตามชื่อที่กล่าวมาข้างต้น ส่วนค่า
+                transparent คือความฟุ้ง และ position จะกำหนดตามแกน X Y</p>
+        </section>
+
     </div>
     <footer>
         <div class="footer-content">
@@ -69,4 +93,5 @@
         </div>
     </footer>
 </body>
+
 </html>
