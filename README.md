@@ -1,4 +1,4 @@
-# Webproject-v2
+# Web-daily_Freshman-project.
 
 The first web project (INT102 Webtechnology)
 Topic of web project is Diary,
